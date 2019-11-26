@@ -26,8 +26,8 @@ widths({576:"font-size-small",768:"font-size-medium",992:"font-size-big"})
 
 width({point1:className1...[, ...{, pointN:classNameN}]})
 
-point:
+point:  
 breakpoint, must be integer. Return class name if window.innerWidth lower than `point` (not including `point`), lowest breakpoint has highest priority. If window.innerWidth is bigger than all breakpoints, then it automatically return the class of the biggest breakpoint.
 
-className:
+className:  
 class name to return, use [classnames](https://www.npmjs.com/package/classnames) under the hood, so accept anything [classnames](https://www.npmjs.com/package/classnames) accepts.
