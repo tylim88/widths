@@ -1,0 +1,40 @@
+{
+	"name": "widths",
+	"version": "0.0.0",
+	"description": "return class name base on window inner width",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "babel src --out-dir dist --copy-files"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tylim88/widths"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/tylim88/widths/issues"
+	},
+	"homepage": "https://github.com/tylim88/widths#readme",
+	"keywords": [
+		"breakpoint",
+		"width",
+		"css",
+		"class",
+		"className"
+	],
+	"dependencies": {
+		"classnames": "^2.2.6"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		]
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.4.3",
+		"@babel/core": "^7.4.3",
+		"@babel/node": "^7.2.2",
+		"@babel/preset-env": "^7.4.3"
+	}
+}
