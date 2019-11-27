@@ -25,7 +25,7 @@ widths({ 576:"font-size-small", 768:"font-size-medium", 992:"font-size-big" })
 ## API
 
 ```js
-widths({ point1:className1...[, ...{ pointN:classNameN }]})
+widths({ point1:className1...[, pointN:classNameN ]})
 ```
 
 **1. point:**  
