@@ -4,10 +4,14 @@
 
 released
 
-## 0.0.1
+## 0.0.3
 
 update readme
 
 ## 0.0.2
 
 fix forgot to build
+
+## 0.0.1
+
+update readme

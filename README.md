@@ -13,7 +13,7 @@ npm i widths
 ```js
 import widths from 'widths'
 
-widths({576:"font-size-small",768:"font-size-medium",992:"font-size-big"})
+widths({ 576:"font-size-small", 768:"font-size-medium", 992:"font-size-big" })
 
 // return font-size-small if inner width is less than 576px (not including 576)
 // return font-size-medium if inner width is less than 786px (not including 786)
@@ -24,10 +24,14 @@ widths({576:"font-size-small",768:"font-size-medium",992:"font-size-big"})
 
 ## API
 
-width({point1:className1...[, ...{, pointN:classNameN}]})
+```js
+widths({ point1:className1...[, ...{ pointN:classNameN }]})
+```
 
-point:  
+**1. point:**  
+
 breakpoint, must be integer. Return class name if window.innerWidth lower than `point` (not including `point`), lowest breakpoint has highest priority. If window.innerWidth is bigger than all breakpoints, then it automatically return the class of the biggest breakpoint.
 
-className:  
-class name to return, use [classnames](https://www.npmjs.com/package/classnames) under the hood, so accept anything [classnames](https://www.npmjs.com/package/classnames) accepts.
+**2. className:**
+
+class name to return, use [classnames](https://www.npmjs.com/package/classnames) under the hood, it accepts anything [classnames](https://www.npmjs.com/package/classnames) accepts.
