@@ -1,6 +1,6 @@
 import classnames from 'classnames'
 
-const widths = obj => {
+const widths = (obj, screenWidth = window.innerWidth) => {
 	const keys = Object.keys(obj)
 	const newObj = {}
 	const breakpoints = keys.map(key => {
@@ -13,7 +13,7 @@ const widths = obj => {
 		}
 	})
 	const sorted = breakpoints.sort((a, b) => a - b)
-	const width = sorted.find(width => window.innerWidth < width)
+	const width = sorted.find(width => screenWidth < width)
 	if (width) {
 		return classnames(newObj[width])
 	} else {

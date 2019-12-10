@@ -13,7 +13,7 @@ npm i widths
 ```js
 import widths from 'widths'
 
-widths({ 576:"font-size-small", 768:"font-size-medium", 992:"font-size-big" })
+widths({ 576:"font-size-small", 768:"font-size-medium", 992:"font-size-big" },window.innerWidth)
 
 // return font-size-small if inner width is less than 576px (not including 576)
 // return font-size-medium if inner width is less than 786px (not including 786)
@@ -25,7 +25,7 @@ widths({ 576:"font-size-small", 768:"font-size-medium", 992:"font-size-big" })
 ## API
 
 ```js
-widths({ point1:className1...[, pointN:classNameN ]})
+widths({ point1:className1...[, pointN:classNameN ]}[,screenWidth])
 ```
 
 **1. point:**  
@@ -35,3 +35,7 @@ breakpoint, must be integer. Return class name if window.innerWidth lower than `
 **2. className:**
 
 class name to return, use [classnames](https://www.npmjs.com/package/classnames) under the hood, it accepts anything [classnames](https://www.npmjs.com/package/classnames) accepts.
+
+**3. screenWidth:**
+
+source of the width, default is window.innerWidth

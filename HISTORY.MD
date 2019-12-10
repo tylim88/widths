@@ -1,5 +1,9 @@
 # HISTORY
 
+## 0.0.5
+
+now can read screen width from different source
+
 ## 0.0.4
 
 update readme
