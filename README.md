@@ -4,7 +4,7 @@ return class name based on window inner width
 
 ## ⚠️ Something that is 10 times better...
 
-If you are using [Styled Components](https://www.npmjs.com/package/styled-components), please take a look at Styled Break, which offer much more powerful and flexible utilities with elegant APIs.
+If you are using [Styled Components](https://www.npmjs.com/package/styled-components), please take a look at [Styled Break](https://www.npmjs.com/package/styled-break), which offer much more powerful and flexible utilities with elegant APIs.
 
 ## Installation
 

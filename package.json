@@ -1,6 +1,6 @@
 {
 	"name": "widths",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "return class name base on window inner width",
 	"main": "dist/index.js",
 	"scripts": {
