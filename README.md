@@ -2,6 +2,10 @@
 
 return class name based on window inner width
 
+## ⚠️ Something that is 10 times better...
+
+If you are using [Styled Components](https://www.npmjs.com/package/styled-components), please take a look at Styled Break, which offer much more powerful and flexible utilities with elegant APIs.
+
 ## Installation
 
 ```bash
@@ -34,7 +38,7 @@ breakpoint, must be integer. Return class name if window.innerWidth lower than `
 
 **2. className:**
 
-class name to return, use [classnames](https://www.npmjs.com/package/classnames) under the hood, it accepts anything [classnames](https://www.npmjs.com/package/classnames) accepts.
+class name to return, use [clsx](https://www.npmjs.com/package/clsx) under the hood, it accepts anything [clsx](https://www.npmjs.com/package/clsx) accepts.
 
 **3. screenWidth:**
 

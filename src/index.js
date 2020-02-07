@@ -1,4 +1,4 @@
-import classnames from 'classnames'
+import clsx from 'clsx'
 
 const widths = (obj, screenWidth = window.innerWidth) => {
 	const keys = Object.keys(obj)
@@ -15,9 +15,9 @@ const widths = (obj, screenWidth = window.innerWidth) => {
 	const sorted = breakpoints.sort((a, b) => a - b)
 	const width = sorted.find(width => screenWidth < width)
 	if (width) {
-		return classnames(newObj[width])
+		return clsx(newObj[width])
 	} else {
-		return classnames(newObj[sorted[sorted.length - 1]])
+		return clsx(newObj[sorted[sorted.length - 1]])
 	}
 }
 
